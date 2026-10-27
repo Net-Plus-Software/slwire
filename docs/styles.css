@@ -1539,6 +1539,21 @@ svg.fill-icon {
   font-size: 11px;
 }
 
+.footer-brand .footer-company {
+  margin-top: 4px;
+  color: #5c717c;
+  font-size: 10px;
+}
+
+.footer-company a {
+  color: var(--mint);
+  transition: color 0.2s ease;
+}
+
+.footer-company a:hover {
+  color: #b5ffdc;
+}
+
 .footer-links {
   display: flex;
   flex-wrap: wrap;

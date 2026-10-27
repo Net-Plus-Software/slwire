@@ -4,7 +4,9 @@
 
 SLwire is a lightweight, tray-first desktop app for seeing what your Windows PC is doing on the network: live upload and download speeds, per-app usage, active connections, Windows Firewall control, alerts, and local usage history.
 
-[**Download SLwire v1.0.0**](https://github.com/sipkaduwapromotion-creator/slwire/releases/latest) · [**Landing page**](https://sipkaduwapromotion-creator.github.io/slwire/)
+Published by [NetPlus Software](https://github.com/Net-Plus-Software).
+
+[**Download SLwire v1.0.0**](https://github.com/Net-Plus-Software/slwire/releases/latest) · [**Landing page**](https://net-plus-software.github.io/slwire/)
 
 ![SLwire dashboard](docs/assets/screenshot-overview.png)
 
@@ -42,7 +44,7 @@ Both builds require Windows 10/11 (64-bit) and administrator access.
 
 ## Install
 
-1. Download the installer from the [latest release](https://github.com/sipkaduwapromotion-creator/slwire/releases/latest).
+1. Download the installer from the [latest release](https://github.com/Net-Plus-Software/slwire/releases/latest).
 2. Run `SLwire-Setup-1.0.0.exe`. If Windows SmartScreen appears, choose **More info → Run anyway**.
 3. Approve the UAC prompt. SLwire opens in the system tray.
 4. Auto-start is enabled by default. You can toggle it in **Settings**.
