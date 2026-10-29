@@ -6,7 +6,7 @@ SLwire is a lightweight, tray-first desktop app for seeing what your Windows PC 
 
 Published by [NetPlus Software](https://github.com/Net-Plus-Software).
 
-[**Download SLwire v1.0.0**](https://github.com/Net-Plus-Software/slwire/releases/latest) · [**Landing page**](https://net-plus-software.github.io/slwire/)
+[**Download SLwire v1.1.0**](https://github.com/Net-Plus-Software/slwire/releases/latest) · [**Landing page**](https://net-plus-software.github.io/slwire/)
 
 ![SLwire dashboard](docs/assets/screenshot-overview.png)
 
@@ -14,27 +14,29 @@ Published by [NetPlus Software](https://github.com/Net-Plus-Software).
 
 | Build | File | Size |
 | --- | --- | --- |
-| Installer (recommended) | `SLwire-Setup-1.0.0.exe` | 89.4 MB |
-| Portable | `SLwire-Portable-1.0.0.exe` | 81.4 MB |
+| Installer (recommended) | `SLwire-Setup-1.1.0.exe` | 89.4 MB |
+| Portable | `SLwire-Portable-1.1.0.exe` | 89.2 MB |
 
 Both builds require Windows 10/11 (64-bit) and administrator access.
 
 ### Installer SHA-256
 
 ```text
-22E1259F1CC71C5422FF533A4121CE462BE2D284429EEF61F34D59A727C69A33
+571AAC36D856DA8015ADEA216C92F6A52BB04BFF4D0001D58C221E51A0D90E14
 ```
 
 ### Portable SHA-256
 
 ```text
-0D967D41EBFB6C795817C51B7FD23D20F262BC5E6ED0BF12314C320AF78C5807
+D7E300CB37E6F6A7347C14D51B7E1800D677DBA6F2E03418C635FB189764AB54
 ```
 
 ## Highlights
 
 - **Live traffic** — real-time speeds, a rolling graph, and 1/5/15-minute averages.
+- **Website usage** — estimated per-site data usage, matched from the Windows DNS cache and reverse DNS, across live, minute, hour, day, month, and year ranges.
 - **Per-app usage** — see which processes are using data. Per-app byte counters are TCP-only.
+- **PDF reports** — export every range plus the data used by each website and application.
 - **Connections** — TCP/UDP endpoints, ports, state, PID, and process name.
 - **Firewall control** — block or allow apps with Windows Firewall rules.
 - **Alerts** — speed spikes, daily limits, new apps, and firewall changes.
@@ -45,7 +47,7 @@ Both builds require Windows 10/11 (64-bit) and administrator access.
 ## Install
 
 1. Download the installer from the [latest release](https://github.com/Net-Plus-Software/slwire/releases/latest).
-2. Run `SLwire-Setup-1.0.0.exe`. If Windows SmartScreen appears, choose **More info → Run anyway**.
+2. Run `SLwire-Setup-1.1.0.exe`. If Windows SmartScreen appears, choose **More info → Run anyway**.
 3. Approve the UAC prompt. SLwire opens in the system tray.
 4. Auto-start is enabled by default. You can toggle it in **Settings**.
 
@@ -54,5 +56,7 @@ Both builds require Windows 10/11 (64-bit) and administrator access.
 ## Notes
 
 - Per-app byte counters are TCP-only. Apps that mostly use UDP/QUIC may show little or no app-level traffic; total traffic is unaffected.
+- Per-connection statistics are measurable for IPv4 TCP on current Windows builds. IPv6 traffic counts toward totals but is not split per site or per app.
+- Website attribution is an estimate: shared/CDN addresses, DNS-over-HTTPS lookups, and rotated CDN IPs can appear as a bare IP address.
 - Runtime data is stored locally in `%APPDATA%\SLwire` (`config.json`, `alerts.json`, `apps.json`, `firewall-rules.json`, and `history\YYYY-MM-DD.json`).
 - Automatic startup uses a scheduled task named `SLwire`, not a Run-key entry, so it does not show a UAC prompt at sign-in.
