@@ -6,7 +6,7 @@ SLwire is a lightweight, tray-first desktop app for seeing what your Windows PC 
 
 Published by [NetPlus Software](https://github.com/Net-Plus-Software).
 
-[**Download SLwire v1.1.0**](https://github.com/Net-Plus-Software/slwire/releases/latest) · [**Landing page**](https://net-plus-software.github.io/slwire/)
+[**Download SLwire v1.1.1**](https://github.com/Net-Plus-Software/slwire/releases/latest) · [**Landing page**](https://net-plus-software.github.io/slwire/)
 
 ![SLwire dashboard](docs/assets/screenshot-overview.png)
 
@@ -14,21 +14,21 @@ Published by [NetPlus Software](https://github.com/Net-Plus-Software).
 
 | Build | File | Size |
 | --- | --- | --- |
-| Installer (recommended) | `SLwire-Setup-1.1.0.exe` | 89.4 MB |
-| Portable | `SLwire-Portable-1.1.0.exe` | 89.2 MB |
+| Installer (recommended) | `SLwire-Setup-1.1.1.exe` | 89.4 MB |
+| Portable | `SLwire-Portable-1.1.1.exe` | 89.2 MB |
 
 Both builds require Windows 10/11 (64-bit) and administrator access.
 
 ### Installer SHA-256
 
 ```text
-571AAC36D856DA8015ADEA216C92F6A52BB04BFF4D0001D58C221E51A0D90E14
+FA4EE724FD1487BFC22A14DF73FA332139C1B3AF8178CCF15042CF2A05C22E36
 ```
 
 ### Portable SHA-256
 
 ```text
-D7E300CB37E6F6A7347C14D51B7E1800D677DBA6F2E03418C635FB189764AB54
+1D9660B13499926A24BFBE95FD0A86D78A6D8C9E5522766F96EC2816FD581E31
 ```
 
 ## Highlights
@@ -47,7 +47,7 @@ D7E300CB37E6F6A7347C14D51B7E1800D677DBA6F2E03418C635FB189764AB54
 ## Install
 
 1. Download the installer from the [latest release](https://github.com/Net-Plus-Software/slwire/releases/latest).
-2. Run `SLwire-Setup-1.1.0.exe`. If Windows SmartScreen appears, choose **More info → Run anyway**.
+2. Run `SLwire-Setup-1.1.1.exe`. If Windows SmartScreen appears, choose **More info → Run anyway**.
 3. Approve the UAC prompt. SLwire opens in the system tray.
 4. Auto-start is enabled by default. You can toggle it in **Settings**.
 
